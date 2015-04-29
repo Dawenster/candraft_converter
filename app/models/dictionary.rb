@@ -1,4 +1,6 @@
 class Dictionary < ActiveRecord::Base
+  has_one :text
+
   def self.import(file)
     CSV.foreach(file.path) do |row|
       Dictionary.create(
