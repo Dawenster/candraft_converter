@@ -152,6 +152,7 @@ DEPENDENCIES
   pry
   rails (= 4.1.8)
   roo
+  rubyzip
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   slim
