@@ -10,6 +10,11 @@ class Text < ActiveRecord::Base
     )
   end
 
+  def converted
+    dic = self.dictionary
+    return self.content.gsub(dic.word, dic.translation)
+  end
+
   private
 
   def find_dictionary

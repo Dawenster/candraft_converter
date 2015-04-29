@@ -5,9 +5,4 @@ class TextsController < ApplicationController
       format.json { render :json => { :status => 200 } }
     end
   end
-
-  def export
-    text = Text.last
-    send_data text.content, :filename => text.filename
-  end
 end
