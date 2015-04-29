@@ -7,7 +7,9 @@ h3
     thead
       tr
         th
-          | Use this
+          | Use
+        th
+          | File
         th
           | Preview
 
@@ -16,5 +18,7 @@ h3
         tr
           td
             input type="checkbox"
+          td
+            = text.filename
           td
             = truncate(text.content, :length => 100)
