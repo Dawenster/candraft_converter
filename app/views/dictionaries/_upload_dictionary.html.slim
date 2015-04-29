@@ -2,7 +2,7 @@ h3
   | 1. Upload conversion table
 h3
   small
-    | Column order: old, new, filename
+    | Must be .csv file (columns: old, new, filename)
 
 = form_tag import_dictionary_path, multipart: true do
   = file_field_tag :file
