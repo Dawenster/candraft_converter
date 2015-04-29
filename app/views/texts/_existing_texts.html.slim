@@ -1,0 +1,20 @@
+h3
+  | Select file to convert
+
+- if @texts.any?
+
+  table.table.table-striped
+    thead
+      tr
+        th
+          | Use this
+        th
+          | Preview
+
+    tbody
+      - @texts.each do |text|
+        tr
+          td
+            input type="checkbox"
+          td
+            = truncate(text.content, :length => 100)

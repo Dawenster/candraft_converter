@@ -1,0 +1,24 @@
+h3
+  | Select conversion text
+
+- if @dictionaries.any?
+
+  table.table.table-striped
+    thead
+      tr
+        th
+          | Use this
+        th
+          | Old
+        th
+          | New
+
+    tbody
+      - @dictionaries.each do |dictionary|
+        tr
+          td
+            input type="checkbox"
+          td
+            = dictionary.word
+          td
+            = dictionary.translation

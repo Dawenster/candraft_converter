@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def main
-    @dictionary = Dictionary.all
+    @dictionaries = Dictionary.all
+    @texts = Text.all
   end
 end

@@ -4,9 +4,16 @@
       h1
         | Candraft Converter
 
+  .row
     .col-xs-12.col-sm-6
-      = render "dictionaries/conversion_table"
+      = render "dictionaries/upload_dictionary"
 
     .col-xs-12.col-sm-6
-      h3
-        | Upload file to convert
+      = render "texts/upload_text"
+
+  .row
+    .col-xs-12.col-sm-6
+      = render "dictionaries/existing_table"
+
+    .col-xs-12.col-sm-6
+      = render "texts/existing_texts"
