@@ -5,21 +5,21 @@
         | Candraft Converter
 
   .row
-    .col-xs-12.col-sm-6
+    .col-xs-12.col-sm-4
       = render "dictionaries/upload_dictionary"
 
-    .col-xs-12.col-sm-6
+    .col-xs-12.col-sm-8
       = render "texts/upload_text"
 
+  br
+
   .row
-    .col-xs-12.col-sm-6
+    .col-xs-12.col-sm-4
       = render "dictionaries/existing_table"
 
-    .col-xs-12.col-sm-6
+    .col-xs-12.col-sm-8
       = render "texts/existing_texts"
 
   .row
     .col-xs-12
-      .convert-button style="text-align: center;"
-        button.btn.btn-warning.btn-lg
-          | Convert
+      = render "texts/download"

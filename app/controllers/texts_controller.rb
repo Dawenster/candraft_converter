@@ -1,6 +1,13 @@
 class TextsController < ApplicationController
   def import
-    Text.import(params[:file])
-    redirect_to root_path
+    respond_to do |format|
+      Text.import(params[:files][0])
+      format.json { render :json => { :status => 200 } }
+    end
+  end
+
+  def export
+    text = Text.last
+    send_data text.content, :filename => text.filename
   end
 end
