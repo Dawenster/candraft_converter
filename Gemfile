@@ -8,7 +8,7 @@ gem 'pg'
 gem 'rails', '4.1.8'
 gem 'sass-rails', '~> 4.0.3'
 gem 'turbolinks'
-gem "twitter-bootstrap-rails"
+gem 'twitter-bootstrap-rails'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
