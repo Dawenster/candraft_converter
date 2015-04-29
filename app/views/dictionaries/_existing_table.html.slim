@@ -7,6 +7,8 @@
           | Old
         th
           | New
+        th
+          | Filename
 
     tbody
       - @dictionaries.each do |dictionary|
@@ -15,3 +17,5 @@
             = dictionary.word
           td
             = dictionary.translation
+          td
+            = dictionary.filename
