@@ -3,7 +3,8 @@ class Dictionary < ActiveRecord::Base
     CSV.foreach(file.path) do |row|
       Dictionary.create(
         :word => row[0],
-        :translation => row[1]
+        :translation => row[1],
+        :filename => row[2]
       )
     end
   end
